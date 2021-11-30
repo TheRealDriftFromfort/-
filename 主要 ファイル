@@ -1,0 +1,38 @@
+/* Area where we include a bunch of stuff */
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+#include <time.h>
+
+/* Main code */
+
+int main()
+{
+    srand(time(NULL));
+    int randomNumber = rand() % 5;
+    
+    printf("こんにちは お願いします 選ぶ ある 番号 0 - 5. と 君 推量 右 君 得る\n");
+    printf("為す いいえ 入力 ある 文字 また 悪い もの 志 起こる。。。");
+    
+    int guess;
+    scanf("%d", &guess);
+    
+    printf("あなた 推測 %d\n", guess);
+    printf("定冠詞 正解 応答 だった %d\n", randomNumber);
+    
+    if(guess == randomNumber)
+    {
+        
+        printf("あなたが勝つ");
+    } else
+    {
+        
+        printf("あなたが負けた");
+    }
+    
+    printf("ありがとうございました の間 遊ぶ");
+    return 0;
+}
+
+
+
